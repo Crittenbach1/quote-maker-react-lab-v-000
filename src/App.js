@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import QuoteForm from './containers/QuoteForm'
-import Quotes from './containers/Quotes'
+import Quotes from './containers/Quotes';
+import QuoteForm from './containers/QuoteForm';
 import { connect } from 'react-redux';
 
 export class App extends Component {
   render() {
-
+   
     return (
       <div className="container-fluid">
         <div className="row title justify-content-center" style={{ paddingTop: '12px' }}>
@@ -13,10 +13,11 @@ export class App extends Component {
         </div>
         <hr />
         < QuoteForm />
-        < Quotes />                  
+        < Quotes />
       </div>
     );
   }
 }
+
 
 export default App;
