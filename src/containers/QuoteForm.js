@@ -22,12 +22,6 @@ export class QuoteForm extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault()
-    const quote = {
-      content: this.state.content,
-      author: this.state.author,
-      id: uuid(),
-      votes: 0
-    }
     this.props.addQuote(quote)
     this.setState({
       content: '',
